@@ -194,10 +194,12 @@ under the License.
 * Zhihui Jiao ([@onlychoice](https://github.com/onlychoice))
 * Hari Sekhon ([@harisekhon](https://github.com/harisekhon))
 * iBuddha ([@iBuddha](https://github.com/iBuddha))
-* Rekha Joshi ([@rekhajoshm](https://github.com/rekhajoshm))
 * Dave Katten ([@dkatten](https://github.com/dkatten))
 * Mark Davis ([@markdav](https://github.com/markdav))
 * Zhuo Liu ([@zhuoliu](https://github.com/zhuoliu))
+* jangie ([@jangie](https://github.com/jangie))
+* Hailei Zhang ([@Hailei](https://github.com/Hailei))
+* Nikhil Singh ([@snikhil5](https://github.com/snikhil5))
 
 ## Acknowledgements
 

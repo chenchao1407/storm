@@ -1207,13 +1207,6 @@ public class Config extends HashMap<String, Object> {
     public static final Object TOPOLOGY_EXECUTOR_RECEIVE_BUFFER_SIZE_SCHEMA = ConfigValidation.PowerOf2Validator;
 
     /**
-     * The maximum number of messages to batch from the thread receiving off the network to the
-     * executor queues. Must be a power of 2.
-     */
-    public static final String TOPOLOGY_RECEIVER_BUFFER_SIZE="topology.receiver.buffer.size";
-    public static final Object TOPOLOGY_RECEIVER_BUFFER_SIZE_SCHEMA = ConfigValidation.PowerOf2Validator;
-
-    /**
      * The size of the Disruptor send queue for each executor. Must be a power of 2.
      */
     public static final String TOPOLOGY_EXECUTOR_SEND_BUFFER_SIZE="topology.executor.send.buffer.size";
@@ -1303,6 +1296,17 @@ public class Config extends HashMap<String, Object> {
      */
     public static final String TOPOLOGY_SHELLBOLT_MAX_PENDING="topology.shellbolt.max.pending";
     public static final Object TOPOLOGY_SHELLBOLT_MAX_PENDING_SCHEMA = ConfigValidation.IntegerValidator;
+
+    /**
+     * Topology central logging sensitivity to determine who has access to logs in central logging system.
+     * The possible values are:
+     *   S0 - Public (open to all users on grid)
+     *   S1 - Restricted
+     *   S2 - Confidential
+     *   S3 - Secret (default.)
+     */
+    public static final String TOPOLOGY_LOGGING_SENSITIVITY="topology.logging.sensitivity";
+    public static final Object TOPOLOGY_LOGGING_SENSITIVITY_SCHEMA = String.class;
 
     /**
      * The root directory in ZooKeeper for metadata about TransactionalSpouts.
